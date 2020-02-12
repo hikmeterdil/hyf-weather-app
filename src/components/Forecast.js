@@ -14,7 +14,7 @@ export default function Forecast() {
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
   const { id } = useParams();
-  const URL = `http://api.openweathermap.org/data/2.5/forecast?id=${id}&units=metric&appid=d8ecce8bfd1e439e197b78060887efc9`;
+  const URL = `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=metric&appid=d8ecce8bfd1e439e197b78060887efc9`;
 
   useEffect(() => {
     setIsLoading(true);

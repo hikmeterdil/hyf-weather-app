@@ -11,7 +11,7 @@ export default function Search({
     setIsLoading(true);
     setHasError(false);
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=d8ecce8bfd1e439e197b78060887efc9`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=d8ecce8bfd1e439e197b78060887efc9`
     )
       .then(res => {
         if (res.ok) {
